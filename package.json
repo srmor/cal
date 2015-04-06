@@ -1,0 +1,22 @@
+{
+  "name": "cal",
+  "version": "1.0.0",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build": "browserify src/js/main.js -o build/bundle.js",
+    "watch-js": "watchify src/js/main.js -o build/bundle.js --debug --verbose",
+    "watch-sass": "sass --watch src/scss/main.scss:build/bundle.css"
+  },
+  "dependencies": {
+    "react": "^0.13.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "reactify": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+.day-view {
+  width: 150px;
+  height: 100%;
+
+  float: left;
+
+  position: relative;
+  top: 0;
+
+  box-sizing: border-box;
+
+  padding-right: 2px;
+  padding-left: 2px;
+
+  border-top: 1px solid rgba(217,217,217,.7);
+  border-right: 1px solid rgba(217,217,217,.7);
+
+  &:first-child {
+    border-left: 1px solid rgba(217,217,217,.7);
+  }
+
+  .day-title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: -25px;
+  }
+}
+
+@import './_event';
